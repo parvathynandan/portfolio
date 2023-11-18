@@ -9,8 +9,9 @@ return (
     <Fragment>
 
         {/* For the Desktop */}
+        <div className="navbarcontainer">
         <nav id="navbar-desktop">
-            <p class="header-title">Parvathy Nandakumar</p>
+            <p class="header-title">PN</p>
             <div>
                 <ul class="navbar-links">
                     <li><a href="#home">Home</a></li>
@@ -21,9 +22,11 @@ return (
                 </ul>
             </div>
         </nav>
+        </div>
         {/* For the mobile */}
+        <div className="navbarcontainer">
         <nav id="navbar-hamburger">
-            <p class="header-title">Parvathy Nandakumar</p>
+            <p class="header-title">PN</p>
             <div class="hamburger-menu">
                 <div className={isHamburgerOpen ? "hamburger-icon open" : 'hamburger-icon'} onClick={handleClick}>
                     <span></span>
@@ -39,6 +42,7 @@ return (
                 </div>
             </div>
         </nav>
+        </div>
     </Fragment>
 )
 }

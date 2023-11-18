@@ -1,17 +1,48 @@
-import { Fragment } from 'react'
+import { Fragment, useEffect } from 'react'
 import './styles.css'
+import './styles.scss'
+import { titleRevealAnimation } from "./animations";
+import resume from './NandakumarParvathy-Resume.pdf'
 
 function Home() {
+  useEffect(() => {
+    titleRevealAnimation() 
+}, [])
+
     return (
       <Fragment id="home">
-        <div class="container">
+        <div className='home-container'>
+        <div class="container homesection">
             <div class="row align-items-center">
                 <div class="col-sm-4 order-sm-2 cont mypic-home-div"><img class="mypic-home" src={require('./portfolio-pics/mypic-home.jpg')} /></div>
                 <div class="col-sm-8 order-sm-1 cont content-home-div">
-                    <p class="hello-world"><span>Hello </span><span>World!</span></p> 
-                    <p class="name-intro"><span>This is </span><span>PARVATHY NANDAKUMAR</span></p>
+                    {/* <p class="hello-world"><span>Hello </span><span>World! </span></p>  */}
+
+
+                    <div class="content">
+                      <div class="content__container">
+                         <p class="content__container__text">
+                            Hello
+                          </p>    
+                        <ul class="content__container__list">
+                          <li class="content__container__list__item">world!</li>
+                          <li class="content__container__list__item">all!</li>
+                          <li class="content__container__list__item">folks!</li>
+                          <li class="content__container__list__item">pals!</li>
+                        </ul>
+                      </div>
+                    </div>
+
+
+
+                    <p class="name-intro revealUp"><span>This is </span><span>PARVATHY NANDAKUMAR</span></p>
+                    <p class="name-desc">Crafting Digital Journeys: Meet Your Fullstack JavaScript Artisan</p>
+                    <a href='resume' target='_blank'>
+                    <a class='download-resume' href={require("./NandakumarParvathy-Resume.pdf")} download="Parvathy-Nandakumar-Resume">Download Resume</a>
+                    </a>
                 </div>
             </div>
+        </div>
         </div>
       </Fragment>
     );
