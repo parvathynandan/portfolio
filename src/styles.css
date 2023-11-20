@@ -215,20 +215,54 @@ nav {
     color: #176B87; 
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
-    font-size: 1.2em;
+    white-space: nowrap;
     overflow: hidden;
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+    margin: 0 auto;
+
+    /* The typwriter cursor */
+    /* border-right: .15em solid orange;  */
+}
+
+.mobile-name-desc.first, .mobile-name-desc.second, .desktop-name-desc {
+    -webkit-animation: type 4s steps(40, end);
+    animation: type 4s steps(40, end);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+
+.mobile-name-desc.second {
+    opacity: 0;
+    animation-delay: 2s;
 }
 
 /* The typing effect */
-    @keyframes typing {
-        from { width: 0 }
-        to { width: 100% }
+@keyframes type {
+    0% { width: 0;}
+    1% {opacity: 1; visibility: visible; }
+    100% { width: 100%; opacity: 1; }
+}
+
+
+/* The typewriter cursor effect */
+/* @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  } */
+
+.mobile-name-desc {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .desktop-name-desc {
+        display: none;
     }
+    .mobile-name-desc {
+        display: block
+    }    
+}
+
 
 .download-resume {
     margin-top: 20px;

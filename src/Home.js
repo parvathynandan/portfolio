@@ -14,8 +14,8 @@ function Home() {
         <div className='home-container'>
         <div class="container homesection">
             <div class="row align-items-center">
-                <div class="col-sm-4 order-sm-2 cont mypic-home-div"><img class="mypic-home" src={require('./portfolio-pics/mypic-home.jpg')} /></div>
-                <div class="col-sm-8 order-sm-1 cont content-home-div">
+                <div class="col-md-4 order-md-2 cont mypic-home-div"><img class="mypic-home" src={require('./portfolio-pics/mypic-home.jpg')} /></div>
+                <div class="col-md-8 order-md-1 cont content-home-div">
                     {/* <p class="hello-world"><span>Hello </span><span>World! </span></p>  */}
 
 
@@ -36,7 +36,9 @@ function Home() {
 
 
                     <p class="name-intro revealUp"><span>This is </span><span>PARVATHY NANDAKUMAR</span></p>
-                    <p class="name-desc">Crafting Digital Journeys: Meet Your Fullstack JavaScript Artisan</p>
+                    <p class="name-desc desktop-name-desc">Crafting Digital Journeys: Meet Your Fullstack JavaScript Artisan</p>
+                    <p class="name-desc mobile-name-desc first">Crafting Digital Journeys:</p>
+                    <p class="name-desc mobile-name-desc second">Meet Your Fullstack JavaScript Artisan</p>
                     <a href='resume' target='_blank'>
                     <a class='download-resume' href={require("./NandakumarParvathy-Resume.pdf")} download="Parvathy-Nandakumar-Resume">Download Resume</a>
                     </a>
