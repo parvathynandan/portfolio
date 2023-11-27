@@ -5,7 +5,7 @@ import Home from './Home';
 import About from './About';
 import Experience from './Experience';
 import Technology from './Technology';
-
+import Footer from './Footer';
 
 import { Fragment } from 'react'
 import './styles.css'
@@ -24,6 +24,7 @@ function App() {
       <About />
       <Experience />
       <Technology />
+      <Footer />
     </Fragment>
   );
 }

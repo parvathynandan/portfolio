@@ -199,7 +199,7 @@ nav {
 }
 .name-intro {
     font-size: 30px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Michroma', sans-serif;
     font-size: 3em;
 }
 
@@ -484,7 +484,104 @@ ul.experience-list {
 .techContainer {
     background-color: #176B87;
     color: #DAFFFB;
+    padding-bottom: 30px;
 }
+
+
+.technology-title {
+    font-family: 'Michroma', sans-serif;
+    text-align: center;
+    font-size: 5vh;
+}
+
+.technology-list {
+    text-align: center;
+}
+
+.tech-icon {
+    width: 60px;
+}
+
+.tech-list {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    .technology-title {
+        margin-bottom: 25px;
+    }  
+}
+
+.tech-item:hover .tech-icon{
+    opacity: 0.3;
+}
+
+.tech-item:hover .tech-item-name{
+    opacity: 1;
+}
+
+.tech-item {
+    position: relative;
+}
+
+.tech-item-name {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    position: absolute;
+    opacity: 0;
+    font-size: 3vh;
+    transition: .5s ease;
+}
+
+.footer-container {
+    margin-top: 100px;
+    padding-bottom: 40px;
+}
+.contact-title {
+    font-family: 'Michroma', sans-serif;
+    font-size: 5vh;
+    color: #176B87;
+    text-align: center;
+}
+.contact-list-1 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.email {
+    font-family: 'Michroma', sans-serif;
+    font-size: 2vh;
+    color: #176B87;
+    padding-right: 10px;
+}
+.phone {
+    font-family: 'Michroma', sans-serif;
+    font-size: 2vh;
+    color: #176B87;
+    padding-left: 10px;
+}
+
+.contact-list-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-icon {
+    width: 20px;
+    color: #64CCC5;
+}
+
+.social-media {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
 
 
 

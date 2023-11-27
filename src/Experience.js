@@ -1,6 +1,7 @@
 import { Fragment, useEffect, useState } from "react"
 import { titleRevealAnimation } from "./animations";
-import downwardarrow from './portfolio-pics/angle-bottom-icon.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
 import Collapse from "./Collapse";
 const Experience = () => {
 
@@ -41,7 +42,7 @@ const Experience = () => {
                                 contributions across various domains</p>
                     </div>
                     <div class='arrow-container'>
-                        <img class="arrow bounce" src={downwardarrow} style={{ fill: 'red' }}  />
+                        <FontAwesomeIcon class="arrow bounce" icon={faAngleDoubleDown} />
                     </div>
                     
                  </div>

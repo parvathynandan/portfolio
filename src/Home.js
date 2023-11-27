@@ -25,17 +25,17 @@ function Home() {
                             Hello
                           </p>    
                         <ul class="content__container__list">
-                          <li class="content__container__list__item">world!</li>
-                          <li class="content__container__list__item">all!</li>
-                          <li class="content__container__list__item">folks!</li>
-                          <li class="content__container__list__item">pals!</li>
+                          <li class="content__container__list__item"> world!</li>
+                          <li class="content__container__list__item"> all!</li>
+                          <li class="content__container__list__item"> folks!</li>
+                          <li class="content__container__list__item"> pals!</li>
                         </ul>
                       </div>
                     </div>
 
 
 
-                    <p class="name-intro revealUp"><span>This is </span><span>PARVATHY NANDAKUMAR</span></p>
+                    <p class="name-intro revealUp"><span>This is </span><span>Parvathy Nandakumar</span></p>
                     <p class="name-desc desktop-name-desc">Crafting Digital Journeys: Meet Your Fullstack JavaScript Artisan</p>
                     <p class="name-desc mobile-name-desc first">Crafting Digital Journeys:</p>
                     <p class="name-desc mobile-name-desc second">Meet Your Fullstack JavaScript Artisan</p>
