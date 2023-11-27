@@ -295,17 +295,10 @@ color: #DAFFFB;
 }
 
 
-.flip-card {
-    display: flex;
-    justify-content: center;
-
-}
 
 .flip-card-inner {
-    width: 60%;
     background-color: #176B87;
     position: relative;
-    box-shadow: 10px 10px 5px rgba(0,0,0,.4);
 }
   
 .flip-card-inner {
