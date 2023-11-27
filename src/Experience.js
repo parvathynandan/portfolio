@@ -1,5 +1,5 @@
 import { Fragment, useEffect, useState } from "react"
-import { titleRevealAnimation } from "./animations";
+import { titleRevealAnimation, sidewaysRevealAnimation } from "./animations";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
 import Collapse from "./Collapse";
@@ -7,6 +7,7 @@ const Experience = () => {
 
     useEffect(() => {
         titleRevealAnimation() 
+        sidewaysRevealAnimation()
     }, [])
     const [collapseValue, setCollapseValue] = useState({
         projectItem1: false,
@@ -33,7 +34,7 @@ const Experience = () => {
                     <div>
                         <h1 class="revealUp">Experience Highlights</h1>
                         <p className="company-name">QBurst Technologies: <span>July 2019 - June 2023</span></p>
-                        <p className="company-role-description">As a full-stack JavaScript developer, I seamlessly transitioned 
+                        <p className="revealSide company-role-description">As a full-stack JavaScript developer, I seamlessly transitioned 
                             between small and large teams, leaving my mark on diverse projects.
                             From building a Booking System to contributing to an e-Learning
                             Platform and Real Estate applications, I navigated both frontend
@@ -48,7 +49,7 @@ const Experience = () => {
                  </div>
 
                 <hr />
-                <p onClick={() => toggle(1)} class='project-list-item'> Worked as a Full Stack Senior Engineer in building a token booking
+                <p onClick={() => toggle(1)} class='revealUp project-list-item'> Worked as a Full Stack Senior Engineer in building a token booking
                  platform which enables the business users to create event profiles 
                  and the customers to make bookings in any available time slot. </p>
                 <Collapse isOpen={collapseValue.projectItem1}>
@@ -56,8 +57,7 @@ const Experience = () => {
                         <ul className="experience-list">
                             <li>Actively contributed to architecture, backend - Node.js, frontend - React areas and testing areas of the project. </li>
                             <li>Collaborated closely with stakeholders to comprehend their needs and effectively translated these insights into functional features</li>
-                            <li>Developed the main feature of the application that lets businesses create and edit their floor maps</li>
-                            <li>Designed and built a complementary application that helps users book seats in a particular slot in a preferred business.</li>
+                            <li>Designed and built an application that helps businesses create event profiles and users to book seats in an event slot.</li>
                             <li> Proficiently implemented payment gateway integration to facilitate user subscription to diverse service plans.</li>
                             <li>Designed and built a token board system to announce the upcoming bookings in the business and change their statuses. </li>
                             <li>Developed and implemented RESTful APIs.</li>
@@ -67,7 +67,7 @@ const Experience = () => {
                     
                 </Collapse>
                 <hr />
-                <p onClick={() => toggle(2)} class='project-list-item'>Worked as an Engineer in developing a web app for a leading sports company that enables administrators to upload
+                <p onClick={() => toggle(2)} class='revealUp project-list-item'>Worked as an Engineer in developing a web app for a leading sports company that enables administrators to upload
                    and manage training lessons and courses, using modern web development technologies 
                    and frameworks to deliver an engaging user experience.</p>
                    <Collapse isOpen={collapseValue.projectItem2}>
@@ -95,7 +95,7 @@ const Experience = () => {
                    </Collapse>
 
                 <hr />
-                <p onClick={() => toggle(3)} class='project-list-item'>
+                <p onClick={() => toggle(3)} class='revealUp project-list-item'>
                  Worked as an Engineer in developing a web app for a leading sports company that enables administrators to upload
                  and manage training lessons and courses, using modern web development technologies 
                  and frameworks to deliver an engaging user experience.

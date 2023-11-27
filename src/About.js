@@ -10,7 +10,7 @@ const About = () => {
             <div id='about' class='flip-card'>
                 <div class='flip-card-inner'>
                     <div class='about-us-container flip-card-front'>
-                        <p class='whoami-title'>Who Am 1?</p>
+                        <p class='revealUp whoami-main-title  whoami-title'>Who Am 1?</p>
                     </div>
                     <div className="about-us-container flip-card-back">
                         <div className="container">

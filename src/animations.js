@@ -45,3 +45,49 @@ export const titleRevealAnimation = () => {
       });
     });
 }
+
+
+export const sidewaysRevealAnimation = () => {
+  gsap.registerPlugin(ScrollTrigger);
+  // REVEAL //
+  gsap.utils.toArray(".revealSide").forEach(function (elem) {
+    ScrollTrigger.create({
+      trigger: elem,
+      start: "top 80%",
+      end: "bottom 20%",
+      markers: false,
+      onEnter: function () {
+        gsap.fromTo(
+          elem,
+          { x: 100, autoAlpha: 0 },
+          {
+            duration: 2,
+            x: 0,
+            autoAlpha: 1,
+            ease: "back",
+            overwrite: "auto"
+          }
+        );
+      },
+      onLeave: function () {
+        gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+      },
+      onEnterBack: function () {
+        gsap.fromTo(
+          elem,
+          { x: -100, autoAlpha: 0 },
+          {
+            duration: 2,
+            x: 0,
+            autoAlpha: 1,
+            ease: "back",
+            overwrite: "auto"
+          }
+        );
+      },
+      onLeaveBack: function () {
+        gsap.fromTo(elem, { autoAlpha: 1 }, { autoAlpha: 0, overwrite: "auto" });
+      }
+    });
+  });
+}
