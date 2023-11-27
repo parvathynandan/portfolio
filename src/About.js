@@ -7,7 +7,7 @@ const About = () => {
     }, [])
     return (
         <Fragment>
-            <div class='flip-card'>
+            <div id='about' class='flip-card'>
                 <div class='flip-card-inner'>
                     <div class='about-us-container flip-card-front'>
                         <p class='whoami-title'>Who Am 1?</p>

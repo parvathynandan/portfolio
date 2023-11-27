@@ -10,8 +10,8 @@ function Home() {
 }, [])
 
     return (
-      <Fragment id="home">
-        <div className='home-container'>
+      <Fragment>
+        <div id="home" className='home-container'>
         <div class="container homesection">
             <div class="row align-items-center">
                 <div class="col-md-4 order-md-2 cont mypic-home-div"><img class="mypic-home" src={require('./portfolio-pics/mypic.jpg')} /></div>

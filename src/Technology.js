@@ -10,7 +10,7 @@ const Technology = () => {
         titleRevealAnimation() 
     }, [])
 return(
-    <div class='techContainer'>
+    <div id='technologies' class='techContainer'>
         <div class='container-fluid'>
             <div class='row align-items-center justify-content-center'>
                 <div class="revealUp col-sm-4  technology-title">

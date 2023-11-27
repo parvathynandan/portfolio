@@ -27,7 +27,7 @@ const Experience = () => {
 
     return (
         <Fragment>
-            <div className="experience-container">
+            <div id='experience' className="experience-container">
                 <div className="experiencesection">
                  <div class='experience-head-section'>
                     <div>

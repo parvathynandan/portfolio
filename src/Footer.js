@@ -9,7 +9,7 @@ const Footer = () => {
     }, [])
     return (
         <Fragment>
-            <div class='footer-container'>
+            <div id='contact' class='footer-container'>
                 <div class='revealUp contact-title'>Reach out and say Hi!</div>
                 <div class='contact-list-1'>
                     <p class='email'>nandakumarparvathy97@gmail.com</p>
