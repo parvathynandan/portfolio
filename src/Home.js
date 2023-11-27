@@ -14,7 +14,7 @@ function Home() {
         <div className='home-container'>
         <div class="container homesection">
             <div class="row align-items-center">
-                <div class="col-md-4 order-md-2 cont mypic-home-div"><img class="mypic-home" src={require('./portfolio-pics/mypic-home.jpg')} /></div>
+                <div class="col-md-4 order-md-2 cont mypic-home-div"><img class="mypic-home" src={require('./portfolio-pics/mypic.jpg')} /></div>
                 <div class="col-md-8 order-md-1 cont content-home-div">
                     {/* <p class="hello-world"><span>Hello </span><span>World! </span></p>  */}
 

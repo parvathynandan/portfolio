@@ -10,12 +10,12 @@ const About = () => {
             <div class='flip-card'>
                 <div class='flip-card-inner'>
                     <div class='about-us-container flip-card-front'>
-                        <p>Who Am 1?</p>
+                        <p class='whoami-title'>Who Am 1?</p>
                     </div>
                     <div className="about-us-container flip-card-back">
                         <div className="container">
                             <div class="row align-items-center">
-                                <p className="col-sm-6 revealUp">Who am I?</p>
+                                <p className="col-sm-6 whoami-title revealUp">Who am I?</p>
                                 <p className="col-sm-6 whoami-desc">
                                 I'm Parvathy Nandakumar, a versatile software developer with 4 years of expertise in
                                 JavaScript, TypeScript, React, Angular, Node.js, and more.

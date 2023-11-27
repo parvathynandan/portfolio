@@ -64,14 +64,14 @@ nav {
 }
 
 .navbar-links a {
-    color: #64CCC5 !important; 
+    color: #DAFFFB !important; 
     text-decoration: none !important;
     text-decoration-color: white !important;
     font-family: 'Sometype Mono', monospace;
 }
 
 .navbar-links a:hover {
-    color: #DAFFFB !important;
+    color: #64CCC5 !important;
     text-decoration: underline !important;
     text-underline-offset: .5rem !important;
 }
@@ -294,9 +294,18 @@ color: #DAFFFB;
  margin-bottom: 25px;
 }
 
+
+.flip-card {
+    display: flex;
+    justify-content: center;
+
+}
+
 .flip-card-inner {
+    width: 60%;
     background-color: #176B87;
     position: relative;
+    box-shadow: 10px 10px 5px rgba(0,0,0,.4);
 }
   
 .flip-card-inner {
@@ -328,6 +337,9 @@ color: #DAFFFB;
     right: 0;
   }
 
+.whoami-title {
+    font-family: 'Michroma', sans-serif;
+}
 .whoami-desc {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -482,6 +494,7 @@ ul.experience-list {
   }
 
 .techContainer {
+    margin-top: 30px;
     background-color: #176B87;
     color: #DAFFFB;
     padding-bottom: 30px;
