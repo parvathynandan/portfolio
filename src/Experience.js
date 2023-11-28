@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useState } from "react"
 import { titleRevealAnimation, sidewaysRevealAnimation } from "./animations";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDoubleDown, faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons'
 import Collapse from "./Collapse";
 const Experience = () => {
 
@@ -49,7 +49,11 @@ const Experience = () => {
                  </div>
 
                 <hr />
-                <p onClick={() => toggle(1)} class='revealUp project-list-item'> Worked as a Full Stack Senior Engineer in building a token booking
+                <p onClick={() => toggle(1)} class='revealUp project-list-item'>
+                {!collapseValue.projectItem1 && <FontAwesomeIcon icon={faArrowDown} />}
+                {collapseValue.projectItem1 && <FontAwesomeIcon icon={faArrowUp} />}&nbsp;
+
+                Worked as a Full Stack Senior Engineer in building a token booking
                  platform which enables the business users to create event profiles 
                  and the customers to make bookings in any available time slot. </p>
                 <Collapse isOpen={collapseValue.projectItem1}>
@@ -67,7 +71,10 @@ const Experience = () => {
                     
                 </Collapse>
                 <hr />
-                <p onClick={() => toggle(2)} class='revealUp project-list-item'>Worked as an Engineer in developing a web app for a leading sports company that enables administrators to upload
+                <p onClick={() => toggle(2)} class='revealUp project-list-item'>
+                {!collapseValue.projectItem2 && <FontAwesomeIcon icon={faArrowDown} />}
+                {collapseValue.projectItem2 && <FontAwesomeIcon icon={faArrowUp} />}&nbsp;
+                    Worked as an Engineer in developing a web app for a leading sports company that enables administrators to upload
                    and manage training lessons and courses, using modern web development technologies 
                    and frameworks to deliver an engaging user experience.</p>
                    <Collapse isOpen={collapseValue.projectItem2}>
@@ -96,6 +103,8 @@ const Experience = () => {
 
                 <hr />
                 <p onClick={() => toggle(3)} class='revealUp project-list-item'>
+                {!collapseValue.projectItem3 && <FontAwesomeIcon icon={faArrowDown} />}
+                {collapseValue.projectItem3 && <FontAwesomeIcon icon={faArrowUp} />}&nbsp;
                  Worked as an Engineer in developing a web app for a leading sports company that enables administrators to upload
                  and manage training lessons and courses, using modern web development technologies 
                  and frameworks to deliver an engaging user experience.
