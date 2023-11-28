@@ -10,10 +10,12 @@ const Footer = () => {
     return (
         <Fragment>
             <div id='contact' class='footer-container'>
-                <div class='revealUp contact-title'>Reach out and say Hi!</div>
-                <div class='contact-list-1'>
-                    <a href="mailto:nandakumarparvathy97@gmail.com" class='email'>nandakumarparvathy97@gmail.com</a>
-                    <a href="tel:+1234567890" class='phone'>+1-438-979-9203</a>
+                <div class=' contact-title'>Reach out and say Hi!</div>
+                <div class='container'>
+                    <div class='row justify-content-center'>
+                    <a href="mailto:nandakumarparvathy97@gmail.com" class='col-md-3 email'>nandakumarparvathy97@gmail.com</a>
+                    <a href="tel:+1234567890" class='col-md-3 phone'>+1-438-979-9203</a>
+                    </div>
                 </div>
                 <div class='contact-list-2'>
                     <div class='social-media'>

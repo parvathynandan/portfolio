@@ -573,15 +573,16 @@ ul.experience-list {
     font-family: 'Michroma', sans-serif;
     font-size: 2vh;
     color: #176B87;
-    padding-right: 10px;
     text-decoration: none;
+    text-align: center;
+
 }
 .phone {
     font-family: 'Michroma', sans-serif;
     font-size: 2vh;
     color: #176B87;
-    padding-left: 10px;
     text-decoration: none;
+    text-align: center;
 }
 
 .contact-list-2 {
