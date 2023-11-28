@@ -37,7 +37,7 @@ return (
                     <li><a onClick={handleClick} href="#home">Home</a></li>
                     <li><a onClick={handleClick} href="#about">About</a></li>
                     <li><a onClick={handleClick} href="#experience">Experience</a></li>
-                    <li><a onClick={handleClick} href="#projects">Technologies</a></li>
+                    <li><a onClick={handleClick} href="#technologies">Technologies</a></li>
                     <li><a onClick={handleClick} href="#contact">Contact</a></li>
                 </div>
             </div>
