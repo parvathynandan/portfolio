@@ -53,7 +53,7 @@ const Experience = () => {
                 {!collapseValue.projectItem1 && <FontAwesomeIcon icon={faArrowDown} />}
                 {collapseValue.projectItem1 && <FontAwesomeIcon icon={faArrowUp} />}&nbsp;
 
-                Worked as a Full Stack Senior Engineer in building a token booking
+                Worked as a Full Stack Senior Engineer in building a Token Booking
                  platform which enables the business users to create event profiles 
                  and the customers to make bookings in any available time slot. </p>
                 <Collapse isOpen={collapseValue.projectItem1}>
