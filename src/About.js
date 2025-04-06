@@ -17,7 +17,7 @@ const About = () => {
                             <div class="row align-items-center">
                                 <p className="col-sm-6 whoami-title revealUp">Who am I?</p>
                                 <p className="col-sm-6 whoami-desc">
-                                I'm Parvathy Nandakumar, a versatile software developer with 4 years of expertise in
+                                I'm Parvathy Nandakumar, a versatile software developer with 5 years of expertise in
                                 JavaScript, TypeScript, React, Angular, Node.js, and more.
                                 I specialize in crafting dynamic web experiences and have conquered
                                 realms like Real Estate, Booking, and E-learning platforms.
