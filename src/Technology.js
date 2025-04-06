@@ -19,6 +19,7 @@ return(
                 <div class="col-sm-8 technology-list">
                 <div class='tech-list'>
                     <div class='tech-item'><FontAwesomeIcon class='tech-icon' icon={faReact} /><span class='tech-item-name'>React</span></div>
+                    <div class='tech-item'>Next.js</div>
                     <div class='tech-item'><FontAwesomeIcon class='tech-icon' icon={faAngular} /><span class='tech-item-name'>Angular</span></div>
                     <div class='tech-item'><FontAwesomeIcon class='tech-icon' icon={faNode} /><span class='tech-item-name'>NodeJS</span></div>
                     <div class='tech-item'><FontAwesomeIcon class='tech-icon' icon={faGit} /><span class='tech-item-name'>Git Version Control</span></div>

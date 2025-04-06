@@ -13,8 +13,8 @@ const Footer = () => {
                 <div class=' contact-title'>Reach out and say Hi!</div>
                 <div class='container'>
                     <div class='row justify-content-center'>
-                    <a href="mailto:parnan.personal@gmail.com" class='col-md-3 email'>parnan.personal@gmail.com</a>
-                    <a href="tel:+1234567890" class='col-md-3 phone'>+1-438-979-9203</a>
+                    <a href="mailto:nandakumarparvathy97@gmail.com" class='col-md-3 email'>nandakumarparvathy97@gmail.com</a><hr/>
+                    <a href="tel:+14389799203" class='col-md-3 phone'>+1-438-979-9203</a>
                     </div>
                 </div>
                 <div class='contact-list-2'>
